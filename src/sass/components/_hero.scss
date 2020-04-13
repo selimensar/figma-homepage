@@ -1,0 +1,83 @@
+.hero {
+    padding: 80px 0;
+    margin-bottom: 6rem;
+    position: relative;
+  width: 100%;
+  display: flex;
+
+  @include responsive(phone) {
+    flex-direction: column;
+    padding: 4rem 0;
+    }
+ 
+  img {
+    position: absolute;
+    right: 5.6rem;
+    bottom: -2rem;
+    width: 100%;
+    max-width: 80rem;
+
+    @include responsive(phone) {
+      position: static;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 4rem;
+      margin-top: 6rem;
+      
+      }
+}
+
+  &__text-box {
+    width: 100%;
+    max-width: 60rem;
+
+    
+
+    h1 {
+      font-size: 8rem;
+      font-family: Helvetica;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 110%;
+      display: flex;
+      align-items: center;
+      color: #212353;
+
+      @include responsive(phone) {
+        text-align: center;
+        font-size: 6rem; 
+      }
+
+    
+    }
+
+    p {
+      width: 38rem;
+      height: 12rem;
+      font-family: Avenir;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.8rem;
+      color: #4b5d68;
+      margin-bottom: 5rem;
+      margin-top: 5rem;
+
+      @include responsive(phone) {
+        text-align: center;
+        margin: auto;
+        padding: 3rem 0;
+      }
+    }
+
+    .btn-secondary {
+      @include responsive(phone) {
+        margin: 6rem auto;
+
+        
+      }
+
+  }
+
+   
+   }
+}

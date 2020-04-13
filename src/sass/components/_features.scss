@@ -1,0 +1,130 @@
+.features {
+  grid-column: center-start / center-end;
+  margin-top: 10rem;
+  width: 90%;
+
+  @supports (display: grid) {
+    display: grid;
+    //grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6rem;
+    align-items: start;
+  }
+
+  @include responsive(phone) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+
+}
+
+
+.feature {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 35.8rem;
+  padding-right: 4rem;
+
+  
+  @supports (display: grid) {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  @include responsive(phone) {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;  
+    margin-bottom: 5rem;
+    
+}
+
+
+  .text-box {
+    padding-left: 3rem;
+    width: 50%;
+    font-size: 1.7rem;
+
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+
+    @include responsive(phone) {
+      width: 100%;
+    }
+
+    color: #4b5d68;
+
+    .text {
+      padding-bottom: 2rem;
+    }
+
+    .btn-feature {
+      color: #212353;
+    }
+  }
+}
+
+.feature-1 {
+  background-repeat: no-repeat;
+  background-position: right;
+  background-image: url("../img/Group-72.svg");
+  
+
+  h4 {
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+
+    @include responsive(phone) {
+      margin-top: -4rem;
+  }
+  }
+}
+
+.feature-2 {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url("../img/Group-69.svg");
+
+    img {
+      @include responsive(phone) {
+        margin-bottom: 2rem;
+        margin-top: -2rem;
+    }
+    }
+
+    h4 {
+      margin-top: -2rem;
+      margin-bottom: 2rem;
+    }
+
+    
+}
+
+.feature-3 {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url("../img/Group-71.svg");
+
+    h4 {
+      margin-top: -2rem;
+      margin-bottom: 2rem;
+    }
+}
+
+.feature-4 {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url("../img/Group-70.svg");
+
+    h4 {
+      margin-top: -2rem;
+      margin-bottom: 2rem;
+    }
+}

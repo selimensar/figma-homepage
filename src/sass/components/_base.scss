@@ -1,0 +1,64 @@
+$background-color: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
+$color-black: #000;
+
+$font-family: Helvetica, Arial, sans-serif;
+
+// COLOR VARIABLES
+$color-primary: #c69963;
+$color-primary-dark: #B28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+width: 100%;
+  // This defines what 1rem is
+font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+@include responsive(tab-land) { 
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%
+}
+
+@include responsive(tab-port) { 
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+}
+
+@include responsive(phone) {
+    font-size: 43.75%; //7px = 1rem
+}
+
+@include responsive(big-desktop) {
+  font-size: 75%; //12px = 1rem   12/16=0.75
+}
+
+}
+body {
+  background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
+  font-family: $font-family;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+

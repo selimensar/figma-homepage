@@ -1,0 +1,44 @@
+.third-section {
+  width: 90%;
+
+margin-top: 15rem;
+ display: flex;
+ justify-content: center;
+      
+ @include responsive(phone) {
+  width: 100%;
+}
+
+  &__text-box {
+
+    h2 {
+      font-family: Helvetica;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 130%;
+
+text-align: center;     
+ color: #212353;
+      margin-bottom: 5rem;
+    }
+
+    p {
+    width: 100%;
+    max-width: 58.4rem;
+
+      font-family: Avenir;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 160%;
+    
+    
+      
+      text-align: center;
+      color: #4b5d68;
+    }
+  }
+
+}
+

@@ -1,0 +1,75 @@
+.header {
+  width: 100%;
+  max-width: 112rem;
+  margin-top: 5rem;
+
+  
+
+  &__left {
+    display: flex;
+
+    @include responsive(phone) {
+    flex-direction: column;
+    }
+  
+  }
+
+  &__top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include responsive(phone) {
+      flex-direction: column;
+      }
+    
+
+    ul {
+      margin: 0;
+      display: flex;
+      list-style-type: none;
+
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      font-family: Avenir;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #4b5d68;
+
+      &:not(:last-child) {
+          margin-right: 4rem;
+      }
+    }
+  }
+
+  &__logo {
+    margin-right: 12.1rem;
+    width: 100%;
+    max-width: 4.9rem;
+
+    @include responsive(phone) {
+      margin: auto;
+      padding-bottom: 2rem;
+      }
+  }
+
+  .btn-primary {
+    @include responsive(phone) {
+      margin-top: 2rem;
+      }
+  }
+
+  a:hover {
+    color: blue;
+  }
+
+  a {
+    color: #000;
+  }
+
+}

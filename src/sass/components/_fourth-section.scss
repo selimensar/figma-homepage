@@ -1,0 +1,419 @@
+.fourth-section {
+  width: 100%;
+  max-width: 157.8rem;
+  height: 100%;
+  max-height: 70.9rem;
+  margin-top: 13rem;
+
+  @include responsive(phone) {
+    width: 100%;
+    max-width: 157.8rem;
+    height: 100%;
+    max-height: 180rem;
+  }
+}
+
+.testimonials {
+  width: 100%;
+  max-width: 111.8rem;
+  background-color: #9c69e2;
+  border-radius: 5rem;
+  padding: 3rem;
+
+  /*@include responsive(phone) {
+    min-height: 170rem;
+  }*/
+
+  h3 {
+    
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 130%;
+    padding-top: 10.9rem;
+    margin-left: 9.3rem;
+
+    color: #ffffff;
+
+    @include responsive(phone) {
+      text-align: center;
+      margin: 0;
+      padding-top: 5rem;
+    }
+  }
+
+  .arrow {
+    margin: 5.8rem 9.3rem;
+
+    @include responsive(phone) {
+      display: none;
+    }
+  }
+
+  .group-test {
+    display: flex;
+    margin-top: 10rem;
+    margin-left: 9.3rem;
+
+    @include responsive(phone) {
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 0;
+    }
+
+    .testimonial-1 {
+      width: 100%;
+      max-width: 64.5rem;
+      height: 100%;
+      min-height: 33rem;
+
+      flex-basis: 645px;
+      flex-grow: 0;
+      flex-shrink: 0;
+
+      display: flex;
+      justify-content: center;
+
+      background: #ffffff;
+      box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+      border-radius: 20px;
+      border: solid 1px #9c69e2;
+      margin-bottom: 5rem;
+
+      @include responsive(phone) {
+        flex-basis: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        
+      }
+
+      .content {
+
+        margin: 5.5rem 7rem;
+
+        display: flex;
+        justify-content: center;
+
+        @include responsive(phone) {
+          flex-direction: column;
+        }
+
+        .pp {
+          @include responsive(phone) {
+            
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10rem;
+          }
+
+            img {
+              width: 100%;
+              max-width: 9rem;
+              height: 100%;
+              max-height: 9rem;
+      
+              
+            }   
+          }
+
+        .text-box {
+          width: 100%;
+          max-width: 35.8rem;
+          margin-top: 2rem;
+          margin-left: 3rem;
+
+          @include responsive(phone) {
+            text-align: center;
+            margin: 0;
+            margin-top: 2rem;
+          }
+  
+          
+          h4 {
+            font-family: Avenir;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 160%;
+  
+            letter-spacing: 0.005em;
+  
+            color: #212353;
+            
+  
+            @include responsive(phone) {
+              margin-top: -10rem;
+            }
+          }
+  
+          h5 {
+            font-family: Avenir;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 160%;
+  
+            letter-spacing: 0.01em;
+  
+            color: #9c69e2;
+            margin-bottom: 1.9rem;
+          }
+  
+          p {
+            font-family: Avenir;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 180%;
+  
+            color: #4b5d68;
+  
+            @include responsive(phone) {
+              width: 100%;
+              max-width: 30rem;
+            }
+          }
+      }
+      
+      }
+    }
+
+    .testimonial-2 {
+
+      width: 100%;
+      max-width: 40rem;
+      height: 100%;
+      min-height: 33rem;
+      margin: 0 2rem;
+
+      flex-basis: 400px;
+      flex-grow: 0;
+      flex-shrink: 0;
+
+      background: #ffffff;
+      box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.1);
+      border-radius: 20px;
+
+      border: solid 1px #9c69e2;
+     
+
+      
+        @include responsive(phone) {
+          flex-basis: 100%;
+          flex-grow: 0;
+          flex-shrink: 0;
+          margin: 0;
+          max-width: 375px;
+          margin-bottom: 5rem;
+        }
+      
+
+      .content-2 {
+        
+        margin-top: 5.5rem;
+        display: flex;
+        justify-content: center;
+
+        @include responsive(phone) {
+          flex-direction: column;
+          margin: 5.5rem 7rem;
+          
+      }
+
+      .pp-2 {
+
+        @include responsive(phone) {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 2rem;
+          
+        }
+
+        img {
+          width: 100%;
+          max-width: 9rem;
+          height: 100%;
+          max-height: 9rem;
+          
+        }
+      }
+        
+  
+        .text-box-2 {
+          width: 100%;
+          max-width: 18rem;
+        
+          margin-left: 3rem;
+          margin-top: 2rem;
+          
+
+          @include responsive(phone) {
+            width: 100%;
+            max-width: 35.8rem;
+            text-align: center;
+            margin: 0;
+            
+            
+          }
+          h4 {
+            font-family: Avenir;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 160%;
+    
+            letter-spacing: 0.005em;
+            color: #212353;
+    
+           
+          }
+    
+          h5 {
+            font-family: Avenir;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 160%;
+    
+            letter-spacing: 0.01em;
+    
+            color: #9c69e2;
+            margin-bottom: 1.9rem;
+    
+            
+          }
+    
+          p {
+            font-family: Avenir;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 180%;
+            color: #4b5d68;
+    
+            
+          }
+        }
+        }
+      
+    }
+
+    .testimonial-3 {
+      width: 100%;
+      max-width: 40rem;
+      height: 100%;
+      min-height: 33rem;
+      margin: 0 2rem;
+
+      flex-basis: 400px;
+      flex-grow: 0;
+      flex-shrink: 0;
+
+      background: #ffffff;
+      box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.1);
+      border-radius: 20px;
+
+      border: solid 1px #9c69e2;
+      
+
+      
+      @include responsive(phone) {
+        flex-basis: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        margin: 0;
+        margin-bottom: 5rem;
+        max-width: 375px;
+      }
+      
+
+      .content-3 {
+
+        display: flex;
+        justify-content: center;
+
+        @include responsive(phone) {
+          flex-direction: column;
+          margin: 5.5rem 7rem;
+      }
+
+
+      .pp-3 {
+        @include responsive(phone) {
+          display: flex;
+        justify-content: center;
+      }
+        
+        img {
+
+          width: 100%;
+          max-width: 9rem;
+          height: 100%;
+          max-height: 9rem;
+          margin-bottom: 2rem;
+
+        }
+      }
+        
+  
+        .text-box-3 {
+          width: 100%;
+          max-width: 18rem;
+          
+
+          @include responsive(phone) {
+            max-width: 35.8rem;
+            text-align: center;
+        }
+          
+          h4 {
+            font-family: Avenir;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 160%;
+    
+            letter-spacing: 0.005em;
+            color: #212353;
+    
+            
+          }
+    
+          h5 {
+            font-family: Avenir;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 160%;
+    
+            letter-spacing: 0.01em;
+    
+            color: #9c69e2;
+            margin-bottom: 1.9rem;
+    
+            @include responsive(phone) {
+              
+              
+            }
+          }
+    
+          p {
+            font-family: Avenir;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 180%;
+            color: #4b5d68;
+    
+            @include responsive(phone) {
+              
+            }
+          }
+        }
+        }
+      
+    }
+    }
+  }
+
